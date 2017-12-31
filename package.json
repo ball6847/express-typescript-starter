@@ -1,0 +1,31 @@
+{
+  "name": "express-typescript-starter",
+  "private": true,
+  "author": "Porawit Poboonma <ball6847@gmail.com>",
+  "version": "0.0.0",
+  "scripts": {
+    "prestart:prod": "rm -rf dist && tsc",
+    "prettier": "prettier 'src/**/*.*' --write --parser \"typescript\"",
+    "start": "NODE_ENV=dev nodemon",
+    "start:prod": "node dist/server.js",
+    "test": "NODE_ENV=test mocha --require ts-node/register src/**/*.spec.ts",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.0",
+    "@types/mocha": "^2.2.45",
+    "@types/node": "^8.5.2",
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0",
+    "nodemon": "^1.14.6",
+    "prettier": "^1.9.2",
+    "ts-node": "^4.1.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  }
+}

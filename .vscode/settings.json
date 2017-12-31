@@ -1,0 +1,6 @@
+{
+  "typescriptHero.resolver.insertSemicolons": false,
+  "typescriptHero.resolver.multiLineWrapThreshold": 80,
+  "typescriptHero.resolver.organizeOnSave": true,
+  "typescriptHero.resolver.stringQuoteStyle": "\""
+}

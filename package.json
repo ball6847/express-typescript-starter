@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "scripts": {
     "prestart:prod": "rm -rf dist && tsc",
-    "prettier": "prettier 'src/**/*.*' --write --parser \"typescript\"",
+    "prettier": "prettier 'src/**/*.ts' --write --parser \"typescript\"",
     "start": "NODE_ENV=dev nodemon",
     "start:prod": "node dist/server.js",
     "test": "NODE_ENV=test mocha --require ts-node/register src/**/*.spec.ts",
